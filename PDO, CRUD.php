@@ -33,6 +33,7 @@ $sql = "DELETE FROM products WHERE id=:id";
 $statement = $pdo -> prepare($sql);
 $statement -> execute($_GET);
 
-
+//Переадресация
+header("Location: /products.php");
 
 
